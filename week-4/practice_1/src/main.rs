@@ -1,20 +1,12 @@
-use std::io;
-
 fn main() {
-    println!("\nStudent Information System!;");
+    let name = "Aisha Lawal";
+    let uni:&str = "Pan-Alantic University";
+    let addr:&str = "km 52 Lekki-Epe Expressway, Ibeju-lekki, lagos";
+    println!("Name: {}", name);
+    println!("University: {}, \nAddress: {}",uni addr);
 
-    // input name
-    println!("\nPlease Enter your name: ");
-    let mut name = String::new();
-        io::stdin()
-        .read_line(&mut name)
-        .expect("Failed to read input");
-    println!("Your name is: {}", name);
 
-    // input age
-    println!("\nEnter your age: ");
-    let mut age = String::new();
-    io::stdin().read_line(&mut age).expect("Failed to read input");
-    let age:i32 = age.trim().parse().expect("Input not an integer");
-    println!("Your age is: {}", age);
+    let department:&'static str = "Computer Science";
+    let school:&'static str = "School of Science and Technology";
+    println("Department: {}, \nSchool: {}",department,school);
 }
